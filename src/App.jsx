@@ -67,7 +67,7 @@ const App = () => {
                     />
                     <p className='text-white font-bold'>{coin.name}</p>
                     <p className='text-white'>({coin.symbol})</p>
-                    <p className='text-white ml-4'>{(coin.price_btc * priceOfBitcoin).toFixed(6)}</p>
+                    <p className='text-white ml-4'>${(coin.price_btc * priceOfBitcoin).toFixed(6)}</p>
                     <p className='text-white ml-4'>{coin.market_cap_rank}</p>
                   </div>
                 </a>

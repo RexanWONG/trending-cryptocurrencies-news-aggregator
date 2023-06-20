@@ -1,4 +1,4 @@
-# trending-cryptocurrencies-news-aggregator
+# trending-cryptocurrencies-news-aggregator 🔥
 A cutting-edge cryptocurrency news aggregator built with ReactJS and JavaScript, delivering recent news updates and trends from the top-7 trending coins on CoinGecko as searched by users in the last 24 hours.  The project uses the GNews API to retrieve the news.
 
 # Forking the Project

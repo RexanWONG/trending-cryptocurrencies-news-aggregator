@@ -3,8 +3,7 @@ import axios from 'axios';
 const getNewsForCoin = async (coinName) => {
     try {
         const yesterdayDate = getYesterday()
-        const response = await axios.get(`https://gnews.io/api/v4/top-headlines?q=${coinName} crypto&from=${yesterdayDate}&lang=en&category=technology&max=1&apikey=5d61992ced3b9b34a78c3d58c5436029`);
-        console.log(response.data.articles)
+        const response = await axios.get(`https://gnews.io/api/v4/top-headlines?q=${coinName} crypto&from=${yesterdayDate}&lang=en&category=technology&max=1&apikey=${import.meta.env.VITE_GNEWS_API_KEY}`);
         return response.data.articles;
     } catch (error) {
         console.error(`Error: ${error}`);
@@ -12,8 +11,8 @@ const getNewsForCoin = async (coinName) => {
 }
 
 function getYesterday() {
-    const date = new Date(); // get the current date
-    date.setDate(date.getDate() - 31); // subtract one day
+    const date = new Date(); 
+    date.setDate(date.getDate() - 31); 
 
     // format the date and time
     let year = date.getUTCFullYear();

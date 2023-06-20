@@ -44,8 +44,6 @@ const App = () => {
     getBtcPrice()
     getTrendingCoins()
     getCurrentDate()
-
-    console.log(coinNews)
   }, [])
   
 

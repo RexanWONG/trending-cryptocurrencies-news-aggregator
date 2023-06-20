@@ -110,6 +110,13 @@ const App = () => {
           );
         })}
       </div>
+
+      <div className='flex flex-col text-neutral-300 ml-2 mt-10'>
+        <a className='hover:text-neutral-500' href='https://github.com/RexanWONG/trending-cryptocurrencies-news-aggregator'>Github</a>
+        <a className='hover:text-neutral-500' href='https://github.com/RexanWONG/trending-cryptocurrencies-news-aggregator'>Created by rexanwong</a>
+
+      </div>
+      
     </div>
   )
 }
